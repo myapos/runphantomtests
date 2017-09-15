@@ -8,10 +8,10 @@ export default async url => {
   console.log('initialize page for url', url);
 
   const hostname = getHostname(url);
-
   const instance = await phantom.create(constants.CREATE_OPTIONS);
 
   const page = await instance.createPage();
+  page.clearCookies();
 
   page.on('onConsoleMessage', msg => { console.log(msg); });
 
@@ -33,6 +33,7 @@ export default async url => {
 
   console.log(`${chalk.grey('Parsing:')} ${chalk.green(hostname)}`);
 
+  await page.close();
   await instance.exit();
-  
+  await instance.kill();
 };
