@@ -23,8 +23,6 @@ export default async url => {
   });
 
   const status = await page.open(url);
-  // const title = await page.property('title');
-  // console.log(title);
 
   await page.evaluate(() => {
     console.log('title:'+document.title);
