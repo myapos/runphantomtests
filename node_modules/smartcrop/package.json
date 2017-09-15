@@ -1,0 +1,32 @@
+{
+  "name": "smartcrop",
+  "version": "1.1.1",
+  "description": "Content aware image cropping.",
+  "homepage": "https://github.com/jwagner/smartcrop.js",
+  "author": "Jonas Wagner <jonas@29a.ch> (http://29a.ch/)",
+  "main": "./smartcrop",
+  "devDependencies": {
+    "500px": "~0.3.2",
+    "benchmark": "~1.0.0",
+    "chai": "^1.9.1",
+    "grunt": "^0.4.4",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-rsync": "~0.5.0",
+    "karma": "^1.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-mocha": "^1.1.1",
+    "karma-sauce-launcher": "^1.0.0",
+    "microtime": "^2.0.0",
+    "mocha": "^1.18.2",
+    "promise-polyfill": "^5.2.1"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwagner/smartcrop.js.git"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/karma start karma.conf.js"
+  }
+}
