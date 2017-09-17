@@ -12,8 +12,8 @@ var capabilities = {
  'chromeOptions' : {
     'args' : ["--incognito"]
   },
- 'browserstack.user' : 'myronapostolakis1',
- 'browserstack.key' : 'L2BxjLn5EftaAzb5BMnq'
+ 'browserstack.user' : 'ΧΧΧΧΧΧΧΧΧΧΧΧΧΧΧΧΧΧΧ',
+ 'browserstack.key' : 'ΧΧΧΧΧΧΧΧΧΧΧΧΧΧΧΧ'
 }
 for (i=1; i<100; i++ ) {
   
